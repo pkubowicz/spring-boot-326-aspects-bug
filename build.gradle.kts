@@ -5,10 +5,7 @@ plugins {
 dependencies {
     api(platform("org.springframework.boot:spring-boot-dependencies:3.2.6"))
 
-    implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-actuator")
-
-    implementation("org.apache.commons:commons-lang3")
 
     implementation("org.springframework:spring-tx")
     // instead of spring-kafka
@@ -22,11 +19,9 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
-
 tasks.test {
     useJUnitPlatform()
 }
-
 
 repositories {
     mavenCentral()
